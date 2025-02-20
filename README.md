@@ -11,18 +11,30 @@ Last updated: 2025-02-20
 
 > Provides an example of creating an automated file processing and summary generation tool using Microsoft Azure technologies. It demonstrates how to use Azure AI Services, Azure Blob Storage, Azure Functions, and Python to upload files, search for key values, and generate summaries. The tool supports tabular data in xlsx and csv formats, as well as text data from docs and pdf files. Summaries can be generated in few formats, including xlsx, csv, and text files.
 
+
 > [!IMPORTANT]
 > Disclaimer: Please note, this example of solution `it is not an official solution guide`. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
+## Important Considerations for Production Environment
 
-For this solution, you can set up your infrastructure using terraform:
+- **Public Network Site**: This example is based on a public network site and is intended for demonstration purposes only. It showcases how various Azure resources can work together to achieve the desired result.
+- **Private Network Configuration**: For enhanced security, consider configuring your Azure resources to operate within a private network. This can be achieved using Azure Virtual Network (VNet) to isolate your resources and control inbound and outbound traffic. Implementing private endpoints for services like Azure Blob Storage and Azure Functions can further secure your data by restricting access to your VNet.
+- **Security**: Ensure that you implement appropriate security measures when deploying this solution in a production environment. This includes:
+  - **Securing Access**: Use Azure Entra ID (formerly known as Azure Active Directory or Azure AD) for authentication and role-based access control (RBAC) to manage permissions.
+  - **Managing Secrets**: Store sensitive information such as connection strings and API keys in Azure Key Vault.
+  - **Data Encryption**: Enable encryption for data at rest and in transit to protect sensitive information.
+- **Scalability**: While this example provides a basic setup, you may need to scale the resources based on your specific requirements. Azure services offer various scaling options to handle increased workloads. Consider using:
+  - **Auto-scaling**: Configure auto-scaling for Azure Functions and other services to automatically adjust based on demand.
+  - **Load Balancing**: Use Azure Load Balancer or Application Gateway to distribute traffic and ensure high availability.
+- **Cost Management**: Monitor and manage the costs associated with your Azure resources. Use Azure Cost Management and Billing to track usage and optimize resource allocation.
+- **Compliance**: Ensure that your deployment complies with relevant regulations and standards. Use Azure Policy to enforce compliance and governance policies across your resources.
+- **Disaster Recovery**: Implement a disaster recovery plan to ensure business continuity in case of failures. Use Azure Site Recovery and backup solutions to protect your data and applications.
 
-[Infrastructure via Terraform](./terraform/): This approach focuses on `setting up the required infrastructure via Terraform`. It allows for source control of not only the solution code, connections, and setups `but also the infrastructure itself`.
+> You can set up your [Infrastructure via Terraform](./terraform/). Terraform is an infrastructure as code (IaC) tool that allows you to define and provision your infrastructure using a high-level configuration language. This approach `enables source control of the infrastructure itself, allowing you to manage not only the solution code but also the connections and configurations`. By using Terraform, you can ensure a consistent and reproducible environment for your deployments, automate infrastructure provisioning, and maintain version control over your infrastructure changes. Also, Microsoft provides other IaC tools such as Bicep and ARM templates. Bicep is a domain-specific language that uses declarative syntax to deploy Azure resources, offering a concise and easy-to-read alternative to JSON-based ARM templates. ARM templates are JSON files that define the infrastructure and configuration for your Azure solution. These tools provide flexibility and options to suit different preferences and requirements for managing Azure resources.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/51809c83-47b5-44e0-b170-b7f22cd15975" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 700px;"/>
 </div>
-
 
 ## Prerequisites
 
