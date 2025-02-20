@@ -42,3 +42,13 @@ output "key_vault_name" {
   description = "The name of the Key Vault"
   value       = azurerm_key_vault.keyvault.name
 }
+
+# Output the Form Recognizer name
+output "form_recognizer_name" {
+  value = azurerm_cognitive_account.form_recognizer.name
+}
+
+# Output the Form Recognizer endpoint
+output "form_recognizer_endpoint" {
+  value = azurerm_cognitive_account.form_recognizer.endpoint
+}

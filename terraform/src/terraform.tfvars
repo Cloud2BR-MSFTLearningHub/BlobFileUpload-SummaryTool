@@ -27,3 +27,6 @@ log_analytics_workspace_name = "your-log-analytics-workspace-name"
 
 # Key Vault
 key_vault_name = "your-key-vault-name"
+
+# Form Recognizer
+form_recognizer_name        = "your_form_recognizer_name"
