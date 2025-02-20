@@ -1,4 +1,4 @@
-# Step 2: Set Up Azure Blob Storage for PDF Ingestion
+# Step 2: Set Up Azure Blob Storage
 
 Costa Rica
 
