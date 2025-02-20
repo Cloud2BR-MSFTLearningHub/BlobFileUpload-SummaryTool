@@ -22,11 +22,10 @@ Last updated: 2025-02-20
 
        <img width="550" alt="image" src="https://github.com/user-attachments/assets/56d1e99f-0a22-4492-bd6f-d4e3a76aedd8">
 
-   - Enter the Resource Group name (e.g., `RGContosoAIDoc`) and select a region (e.g., `East US 2`). You can add tags if needed.
+   - Enter the Resource Group name (e.g., `RGFileUploadSummary`) and select a region (e.g., `East US 2`). You can add tags if needed.
    - Click **Review + create** and then **Create**.
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/288d05ca-e5e3-47f7-9c0d-3ddb0fffe518">
-
+        <img width="550" alt="image" src="https://github.com/user-attachments/assets/44aefda0-a373-4682-b1dd-3ddf6e3a94c7">
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
