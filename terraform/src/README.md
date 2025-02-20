@@ -76,8 +76,17 @@ graph TD;
 1. **Login to Azure**: This command logs you into your Azure account. It opens a browser window where you can enter your Azure credentials. Once logged in, you can manage your Azure resources from the command line.
 
     ```sh
+    cd ./terraform/src/
+    ```
+
+    ```sh
     az login
     ```
+
+    <div align="center">
+      <img src="https://github.com/user-attachments/assets/caed0c96-2a3e-4e1a-a788-b1b43b8d5939" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+    </div>
+    
 
 2. **Initialize Terraform**: Initializes the working directory containing the Terraform configuration files. It downloads the necessary provider plugins and sets up the backend for storing the state.
 
@@ -86,7 +95,7 @@ graph TD;
     ```
 
     <div align="center">
-      <img src="" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+      <img src="https://github.com/user-attachments/assets/8b4c3960-b9f6-44dc-8325-f58ef15eb1dc" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
     </div>
 
 
