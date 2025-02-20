@@ -22,7 +22,15 @@ Last updated: 2025-02-20
 
 </details>
 
-## Overview 
+<details>
+<summary><b>List of Contents</b> (Click to expand)</summary>
+
+- [Workflow](#workflow)
+- [Architecture: Components and Interactions](#architecture-components-and-interactions)
+
+</details>
+
+## Workflow
 
 ```mermaid
 graph TD
@@ -50,15 +58,21 @@ graph TD
     end
 ```
 
-- **Upload File to Blob Storage**: Users upload files to the input container in Azure Blob Storage.
-- **Azure Function**: The Azure Function is triggered by the file upload.
-- **Read Key Table from Blob Storage**: The function reads the key table from the input container.
-- **Read Input File from Blob Storage**: The function reads the uploaded input file from the input container.
-- **Process Data**: The function processes the data by searching for key values and extracting relevant information.
-- **Generate Summary**: The function generates a summary based on the processed data.
-- **Save Summary to Output Container**: The function saves the summary to the output container in Azure Blob Storage.
-- **Summary Available for Download**: The summary is available for download from the output container.
 
+1. **Upload File to Blob Storage**: Users upload files to the input container in Azure Blob Storage.
+2. **Azure Function**: The Azure Function is triggered by the file upload.
+3. **Read Key Table from Blob Storage**: The function reads the key table from the input container.
+4. **Read Input File from Blob Storage**: The function reads the uploaded input file from the input container.
+5. **Process Data**: The function processes the data by searching for key values and extracting relevant information.
+6. **Generate Summary**: The function generates a summary based on the processed data.
+7. **Save Summary to Output Container**: The function saves the summary to the output container in Azure Blob Storage.
+8. **Summary Available for Download**: The summary is available for download from the output container.
+
+## Architecture: Components and Interactions 
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/beaa73fb-e677-48d9-a3d9-a4367c3d7974" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 700px;"/>
+</div>
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
