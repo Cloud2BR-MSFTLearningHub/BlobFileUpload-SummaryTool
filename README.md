@@ -11,9 +11,12 @@ Last updated: 2025-02-20
 
 > Provides an example of creating an automated file processing and summary generation tool using Microsoft Azure technologies. It demonstrates how to use Azure AI Services, Azure Blob Storage, Azure Functions, and Python to upload files, search for key values, and generate summaries. The tool supports tabular data in xlsx and csv formats, as well as text data from docs and pdf files. Summaries can be generated in few formats, including xlsx, csv, and text files.
 
-
 > [!IMPORTANT]
 > Disclaimer: Please note, this example of solution `it is not an official solution guide`. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/beaa73fb-e677-48d9-a3d9-a4367c3d7974" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 700px;"/>
+</div>
 
 ## Important Considerations for Production Environment
 
@@ -52,6 +55,8 @@ Please follow as described below:
 2. Then, follow each [each section](#content).
 
 ## Content 
+
+- [Solution Overview](./instructions/0_Overview/README.md): Understand the core components and capabilities.
 
        
 <div align="center">
