@@ -14,6 +14,11 @@ Last updated: 2025-02-20
 > Typically, resources that share the same lifecycle are added to the same resource group, allowing for easier deployment, updating, and deletion as a unit.
 > Resource groups also store metadata about the resources, and you can apply access control, locks, and tags to them for better management and organization.
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c02c3623-477f-4ab5-876a-9801191a34f8" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 200px;"/>
+</div>
+
+
 1. **Create an Azure Account**: If you don't have one, sign up for an Azure account.
 2. **Create a Resource Group**:
    - Go to the Azure portal.
