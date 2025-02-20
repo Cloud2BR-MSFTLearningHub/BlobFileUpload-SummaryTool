@@ -9,6 +9,22 @@ resource "azurerm_resource_group" "rg" {
   }
 }
 
+# Azure Form Recognizer (Document Intelligence)
+resource "azurerm_cognitive_account" "form_recognizer" {
+  name                = var.form_recognizer_name
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+  kind                = "FormRecognizer"
+  sku_name            = "S0"
+
+  depends_on = [azurerm_resource_group.rg]
+
+  # Output the Form Recognizer name
+  provisioner "local-exec" {
+    command = "echo Form Recognizer: ${self.name}"
+  }
+}
+
 # Storage Account
 resource "azurerm_storage_account" "storage" {
   name                     = var.storage_account_name
