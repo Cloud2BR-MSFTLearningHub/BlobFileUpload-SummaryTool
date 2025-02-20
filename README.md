@@ -18,6 +18,37 @@ Last updated: 2025-02-20
   <img src="https://github.com/user-attachments/assets/beaa73fb-e677-48d9-a3d9-a4367c3d7974" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 700px;"/>
 </div>
 
+
+## Prerequisites
+
+- An `Azure subscription is required`. All other resources, including instructions for creating a Resource Group, are provided in this template.
+- If you choose to use the Terraform approach, please ensure that:
+  -  [Terraform is installed on your local machine](https://developer.hashicorp.com/terraform/tutorials/azure-get-started/install-cli#install-terraform).
+  -  [Install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) to work with both Terraform and Azure commands.
+
+## Where to start? 
+
+Please follow as described below:
+
+- If you're choosing the deploying the `infrastructure via Azure Portal`:
+    1. Go through [each section](#content) `from the start`.
+- If you're choosing the [Infrastructure via Terraform](./terraform/) approach:
+    1. Please follow the [Terraform guide](./terraform/README.md) to deploy the necessary Azure resources for the workshop.
+    2. Then, follow each [each section](#content) but `skip the creation of each resource`.
+
+> [!NOTE]
+> About [Infrastructure via Terraform](./terraform/), Terraform is an infrastructure as code (IaC) tool that allows you to define and provision your infrastructure using a high-level configuration language. This approach `enables source control of the infrastructure itself, allowing you to manage not only the solution code but also the connections and configurations`. By using Terraform, you can ensure a consistent and reproducible environment for your deployments, automate infrastructure provisioning, and maintain version control over your infrastructure changes. Also, Microsoft provides other IaC tools such as Bicep and ARM templates. Bicep is a domain-specific language that uses declarative syntax to deploy Azure resources, offering a concise and easy-to-read alternative to JSON-based ARM templates. ARM templates are JSON files that define the infrastructure and configuration for your Azure solution. These tools provide flexibility and options to suit different preferences and requirements for managing Azure resources.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/51809c83-47b5-44e0-b170-b7f22cd15975" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 700px;"/>
+</div>
+
+
+## Content 
+
+- [Solution Overview](./instructions/0_Overview/README.md): Understand the core components and capabilities.
+
+
 ## Important Considerations for Production Environment
 
 - **Public Network Site**: This example is based on a public network site and is intended for demonstration purposes only. It showcases how various Azure resources can work together to achieve the desired result.
@@ -33,32 +64,6 @@ Last updated: 2025-02-20
 - **Compliance**: Ensure that your deployment complies with relevant regulations and standards. Use Azure Policy to enforce compliance and governance policies across your resources.
 - **Disaster Recovery**: Implement a disaster recovery plan to ensure business continuity in case of failures. Use Azure Site Recovery and backup solutions to protect your data and applications.
 
-> You can set up your [Infrastructure via Terraform](./terraform/). Terraform is an infrastructure as code (IaC) tool that allows you to define and provision your infrastructure using a high-level configuration language. This approach `enables source control of the infrastructure itself, allowing you to manage not only the solution code but also the connections and configurations`. By using Terraform, you can ensure a consistent and reproducible environment for your deployments, automate infrastructure provisioning, and maintain version control over your infrastructure changes. Also, Microsoft provides other IaC tools such as Bicep and ARM templates. Bicep is a domain-specific language that uses declarative syntax to deploy Azure resources, offering a concise and easy-to-read alternative to JSON-based ARM templates. ARM templates are JSON files that define the infrastructure and configuration for your Azure solution. These tools provide flexibility and options to suit different preferences and requirements for managing Azure resources.
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/51809c83-47b5-44e0-b170-b7f22cd15975" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 700px;"/>
-</div>
-
-## Prerequisites
-
-- An `Azure subscription is required`. All other resources, including instructions for creating a Resource Group, are provided in this template.
-- If you choose to use the Terraform approach, please ensure that:
-  -  [Terraform is installed on your local machine](https://developer.hashicorp.com/terraform/tutorials/azure-get-started/install-cli#install-terraform).
-  -  [Install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) to work with both Terraform and Azure commands.
-
-
-## Where to start? 
-
-Please follow as described below:
-
-1. Please follow the [Terraform guide](./terraform/README.md) to deploy the necessary Azure resources for the workshop.
-2. Then, follow each [each section](#content).
-
-## Content 
-
-- [Solution Overview](./instructions/0_Overview/README.md): Understand the core components and capabilities.
-
-       
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
