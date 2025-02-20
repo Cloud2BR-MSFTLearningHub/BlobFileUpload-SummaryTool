@@ -12,7 +12,7 @@ Last updated: 2025-02-04
 > Terraform templates to deploy an Azure-based automated file processing and summary generation tool. The solution includes:
 
 <div align="center">
-  <img src="" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 700px;"/>
+  <img src="https://github.com/user-attachments/assets/51809c83-47b5-44e0-b170-b7f22cd15975" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 700px;"/>
 </div>
 
 <details>
@@ -53,7 +53,7 @@ Last updated: 2025-02-04
 | Azure Resource Group      | A logical container that organizes and manages all the related Azure resources.                       |
 | Azure Blob Storage        | Stores input files (xlsx, csv, docs, pdfs) and output summary files.                                  |
 | Azure Functions           | Executes serverless compute tasks to process the uploaded files and generate summaries.                |
-| Azure Cognitive Services  | Provides text analytics and OCR capabilities to handle text data from docs and pdfs.                  |
+| Azure AI Services  | Provides text analytics and OCR capabilities to handle text data from docs and pdfs.                  |
 | Azure Storage Account     | Manages Blob Storage and other storage services.                                                      |
 | Azure Key Vault           | Stores and manages sensitive information such as connection strings and API keys.                     |
 | Application Insights      | Monitors the performance and usage of the file processing tool.                                        |
