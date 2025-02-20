@@ -62,7 +62,10 @@ resource "azurerm_function_app" "function_app" {
   storage_account_access_key = azurerm_storage_account.storage.primary_access_key
   app_service_plan_id        = azurerm_service_plan.asp.id
   os_type                    = "linux"
-  runtime_stack              = "python"
+
+  app_settings = {
+    FUNCTIONS_WORKER_RUNTIME = "python"
+  }
 
   depends_on = [azurerm_service_plan.asp]
 
