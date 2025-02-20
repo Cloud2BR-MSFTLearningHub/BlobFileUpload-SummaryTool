@@ -18,7 +18,6 @@ Last updated: 2025-02-20
   <img src="https://github.com/user-attachments/assets/beaa73fb-e677-48d9-a3d9-a4367c3d7974" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 700px;"/>
 </div>
 
-
 ## Prerequisites
 
 - An `Azure subscription is required`. All other resources, including instructions for creating a Resource Group, are provided in this template.
@@ -47,7 +46,10 @@ Please follow as described below:
 ## Content 
 
 - [Solution Overview](./instructions/0_Overview/README.md): Understand the core components and capabilities.
-
+- [Step 1: Creating a Resource Group in the Azure Portal](./instructions/1_CreateRG.md)
+- [Step 2: Set Up Azure Blob Storage](./instructions/2_CreateBlobStorage.md)
+- [Step 3: Set Up AI Services](./instructions/3_SetupAIServices.md)
+- [Step 4: Create a Log Analytics workspace in Azure](./instructions/4_CreateLogAnalyticsWS.md)
 
 ## Important Considerations for Production Environment
 
@@ -68,4 +70,3 @@ Please follow as described below:
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
-
