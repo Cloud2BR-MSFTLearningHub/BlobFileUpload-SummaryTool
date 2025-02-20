@@ -126,7 +126,7 @@ resource "azurerm_key_vault" "keyvault" {
   name                = var.key_vault_name
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  tenant_id           = var.tenant_id
+  tenant_id           = data.azurerm_client_config.current.tenant_id
   sku_name            = "standard"
 
   depends_on = [azurerm_resource_group.rg]
@@ -136,3 +136,6 @@ resource "azurerm_key_vault" "keyvault" {
     command = "echo Key Vault: ${self.name}"
   }
 }
+
+# Data source to get tenant ID
+data "azurerm_client_config" "current" {}
