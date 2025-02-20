@@ -1,4 +1,4 @@
-# File Upload Summary Tool - Accelerator
+# Azure File Upload and Summary Generator - Accelerator
 
 Costa Rica
 
