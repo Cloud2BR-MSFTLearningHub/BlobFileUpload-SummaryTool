@@ -1,4 +1,4 @@
-# Step 1: Set Up Azure Blob Storage for PDF Ingestion
+# Step 2: Set Up Azure Blob Storage for PDF Ingestion
 
 Costa Rica
 
@@ -9,6 +9,9 @@ Last updated: 2025-02-20
 
 ------------------------------------------
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a03041f5-ddde-4315-b2ce-3a4048e368bc" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 400px;"/>
+</div>
 
 ## Create a Storage Account:
 
@@ -60,3 +63,8 @@ Within the Storage Account, create a Blob Container to store your PDFs.
 > If you plan to use access keys, please ensure that the setting "Allow storage account key access" is enabled. When this setting is disabled, any requests to the account authorized with Shared Key, including shared access signatures (SAS), will be denied. Click [here to learn more](https://learn.microsoft.com/en-us/azure/storage/common/shared-key-authorization-prevent?tabs=portal)
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/b375dca8-9abf-4555-975b-b888dcc68988" />
+
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
