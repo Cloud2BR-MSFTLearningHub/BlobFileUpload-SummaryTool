@@ -9,6 +9,9 @@ Last updated: 2025-02-20
 
 ------------------------------------------
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a9499c37-b9c3-48f5-8cc8-7b612cff4d96" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 400px;"/>
+</div>
 
 1. `Sign in to Azure Portal`: Go to the Azure portal and sign in with your Azure account.
 2. `Search for Log Analytics`: In the search bar at the top, type `Log Analytics` and select `Log Analytics workspaces` from the list.
