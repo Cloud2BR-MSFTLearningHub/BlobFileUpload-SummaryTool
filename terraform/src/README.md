@@ -108,7 +108,7 @@ graph TD;
         ```
 
         <div align="center">
-          <img src="" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+          <img src="https://github.com/user-attachments/assets/1cd5e195-9441-4a4e-ba7a-0ef046370834" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
         </div>
 
    - **Order Now**: Applies the changes required to reach the desired state of the configuration. It prompts for confirmation before making any changes. It also uses the variable values specified in `terraform.tfvars`.
@@ -116,10 +116,15 @@ graph TD;
         ```sh
         terraform apply -var-file terraform.tfvars
         ```
+  
+       <div align="center">
+          <img src="https://github.com/user-attachments/assets/81f79658-c35f-465a-98e8-55da2b1561fa" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+        </div>
 
-        <img width="550" alt="image" src="" />
+       <div align="center">
+          <img src="https://github.com/user-attachments/assets/bef1b08c-46d8-464e-a87b-e0b93034cc54" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+        </div>
 
-        <img width="550" alt="image" src="" />
 
    - **Remove**: Destroys the infrastructure managed by Terraform. It prompts for confirmation before deleting any resources. It also uses the variable values specified in `terraform.tfvars`.
     
