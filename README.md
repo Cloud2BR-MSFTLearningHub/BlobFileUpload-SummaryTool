@@ -34,7 +34,7 @@ Please follow as described below:
     1. Go through [each section](#content) `from the start`.
 - If you're choosing the [Infrastructure via Terraform](./terraform/) approach:
     1. Please follow the [Terraform guide](./terraform/README.md) to deploy the necessary Azure resources for the workshop.
-    2. Then, follow each [each section](#content) but `skip the creation of each resource`.
+    2. Then, follow each [each section](#content) but `skip the creation of each resource that you already have deployed with Terraform`.
 
 > [!NOTE]
 > About [Infrastructure via Terraform](./terraform/), Terraform is an infrastructure as code (IaC) tool that allows you to define and provision your infrastructure using a high-level configuration language. This approach `enables source control of the infrastructure itself, allowing you to manage not only the solution code but also the connections and configurations`. By using Terraform, you can ensure a consistent and reproducible environment for your deployments, automate infrastructure provisioning, and maintain version control over your infrastructure changes. Also, Microsoft provides other IaC tools such as Bicep and ARM templates. Bicep is a domain-specific language that uses declarative syntax to deploy Azure resources, offering a concise and easy-to-read alternative to JSON-based ARM templates. ARM templates are JSON files that define the infrastructure and configuration for your Azure solution. These tools provide flexibility and options to suit different preferences and requirements for managing Azure resources.
