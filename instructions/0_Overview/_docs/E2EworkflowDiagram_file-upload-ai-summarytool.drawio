@@ -1,0 +1,61 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram name="workflow" id="VzGhtupkYtY4OB6_fRJi">
+    <mxGraphModel dx="2143" dy="696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UkH3Tmcc9s9qquvXN7uM-32" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-720" y="170" width="830" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="UkH3Tmcc9s9qquvXN7uM-30" value="Subscription" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Key.svg;" parent="1" vertex="1">
+          <mxGeometry x="-734.5" y="153.44" width="31" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UkH3Tmcc9s9qquvXN7uM-31" value="Resource Group" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/ResourceGroup.svg;" parent="1" vertex="1">
+          <mxGeometry x="-744" y="640" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Vv6FFmmm0vw7hVMtTU7b-1" value="Blob Storage" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/BlobBlock.svg;" parent="1" vertex="1">
+          <mxGeometry x="-385" y="265.64" width="58" height="48.72" as="geometry" />
+        </mxCell>
+        <mxCell id="Eqv_7Mpk2FUOEcddT1MY-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Vv6FFmmm0vw7hVMtTU7b-8" target="Vv6FFmmm0vw7hVMtTU7b-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eqv_7Mpk2FUOEcddT1MY-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Vv6FFmmm0vw7hVMtTU7b-8" target="3NK07bUQuaUZu8PJls8a-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eqv_7Mpk2FUOEcddT1MY-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Vv6FFmmm0vw7hVMtTU7b-8" target="3NK07bUQuaUZu8PJls8a-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vv6FFmmm0vw7hVMtTU7b-8" value="Function App" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" parent="1" vertex="1">
+          <mxGeometry x="-395" y="457" width="68" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vv6FFmmm0vw7hVMtTU7b-12" value="Application&amp;nbsp;&lt;br&gt;Insights" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Application_Insights.svg;" parent="1" vertex="1">
+          <mxGeometry x="6" y="559.36" width="32" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Eqv_7Mpk2FUOEcddT1MY-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Vv6FFmmm0vw7hVMtTU7b-13" target="UkH3Tmcc9s9qquvXN7uM-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vv6FFmmm0vw7hVMtTU7b-13" value="Log Analytics Workspace" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/management_governance/Log_Analytics_Workspaces.svg;" parent="1" vertex="1">
+          <mxGeometry x="-540" y="576" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="3NK07bUQuaUZu8PJls8a-1" value="AI Services" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/ai_machine_learning/Cognitive_Services.svg;" parent="1" vertex="1">
+          <mxGeometry x="-210" y="440" width="68" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="3NK07bUQuaUZu8PJls8a-2" value="Key Vault" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/security/Key_Vaults.svg;" parent="1" vertex="1">
+          <mxGeometry x="-609" y="457" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Eqv_7Mpk2FUOEcddT1MY-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Eqv_7Mpk2FUOEcddT1MY-1" target="Vv6FFmmm0vw7hVMtTU7b-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eqv_7Mpk2FUOEcddT1MY-1" value="User &lt;br&gt;Uploads File&amp;nbsp;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-630" y="260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Eqv_7Mpk2FUOEcddT1MY-2" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="-590" y="250" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Eqv_7Mpk2FUOEcddT1MY-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.446;entryY=0.874;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Vv6FFmmm0vw7hVMtTU7b-12" target="Vv6FFmmm0vw7hVMtTU7b-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
