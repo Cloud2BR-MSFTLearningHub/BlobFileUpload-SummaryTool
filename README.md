@@ -42,7 +42,6 @@ Please follow as described below:
   <img src="https://github.com/user-attachments/assets/51809c83-47b5-44e0-b170-b7f22cd15975" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 700px;"/>
 </div>
 
-
 ## Content 
 
 - [Solution Overview](./instructions/0_Overview/README.md): Understand the core components and capabilities.
@@ -50,6 +49,7 @@ Please follow as described below:
 - [Step 2: Set Up Azure Blob Storage](./instructions/2_CreateBlobStorage.md)
 - [Step 3: Set Up AI Services](./instructions/3_SetupAIServices.md)
 - [Step 4: Create a Log Analytics workspace in Azure](./instructions/4_CreateLogAnalyticsWS.md)
+- [Step 5: Setup the Key Vault and Store secrets/keys](./instructions/5_SetupKeyVault.md)
 
 ## Important Considerations for Production Environment
 
