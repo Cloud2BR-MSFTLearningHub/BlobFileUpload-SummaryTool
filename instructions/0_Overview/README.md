@@ -35,13 +35,13 @@ Last updated: 2025-02-21
 ```mermaid
 graph TD
     A[Upload File to Blob Storage] -->|Trigger| B[Azure Function]
-    B --> C[Read Key Table from Blob Storage]
-    B --> D[Read Input File from Blob Storage]
+    B --> C[Read KeyTable from BlobStg]
+    B --> D[Read InputFile from BlobStg]
     C --> E[Process Data]
     D --> E[Process Data]
     E --> F[Generate Summary]
-    F --> G[Save Summary to Output Container]
-    G --> H[Summary Available for Download]
+    F --> G[Save Summary to Container]
+    G --> H[Summary Available for Dwnld]
 
     subgraph Azure Resources
         A
