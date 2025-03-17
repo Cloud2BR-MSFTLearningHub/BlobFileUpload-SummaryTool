@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-02-04
+Last updated: 2025-02-21
 
 ------------------------------------------
 
@@ -122,9 +122,8 @@ graph TD;
         </div>
 
        <div align="center">
-          <img src="https://github.com/user-attachments/assets/bef1b08c-46d8-464e-a87b-e0b93034cc54" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+          <img src="https://github.com/user-attachments/assets/7fb56136-a1cf-45dc-b96c-6b0f9312ca19" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
         </div>
-
 
    - **Remove**: Destroys the infrastructure managed by Terraform. It prompts for confirmation before deleting any resources. It also uses the variable values specified in `terraform.tfvars`.
     
