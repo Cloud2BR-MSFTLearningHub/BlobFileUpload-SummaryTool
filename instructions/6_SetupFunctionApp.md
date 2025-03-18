@@ -26,7 +26,7 @@ Last updated: 2025-03-17
 
      <img width="550" alt="image" src="https://github.com/user-attachments/assets/7e69e7f2-7aea-474a-b7ee-334fac2b8244">
 
-3. **Configure the Function App**:
+4. **Configure the Function App**:
    - On the `Basics` tab, fill in the required fields:
      - **Subscription**: Select your Azure subscription.
      - **Resource Group**: Create a new resource group or select an existing one.
@@ -34,7 +34,6 @@ Last updated: 2025-03-17
      - **Region**: Choose the region closest to you or your users.
      - **Runtime stack**: Select the runtime stack (e.g., .NET, Node.js, Python) you want to use.
      - **Version**: Choose the version of the runtime stack.
-4. **Select Hosting Plan**: Under `Hosting`, choose the `Consumption (Serverless)` plan for a pay-per-execution model, or select a different plan based on your needs.
 5. **Configure Storage and Networking**:
    - **Storage Account**: Create a new storage account or use an existing one.
    - **Operating System**: Choose between Windows or Linux.
@@ -43,10 +42,13 @@ Last updated: 2025-03-17
 7. **Review and Create**:
    - Review all the configurations you have made.
    - Click `Create` to deploy your Function App.
-8. **Create a Function**:
-   - Once the Function App is created, navigate to it in the Azure portal.
-   - Select `Functions` from the left-hand menu, then click `+ Add` to create a new function.
-   - Choose a template (e.g., HTTP trigger) and configure the function settings.
+  
+  
+## Create a Function
+
+- Once the Function App is created, navigate to it in the Azure portal.
+- Select `Functions` from the left-hand menu, then click `+ Add` to create a new function.
+- Choose a template (e.g., HTTP trigger) and configure the function settings.
 
 
 
