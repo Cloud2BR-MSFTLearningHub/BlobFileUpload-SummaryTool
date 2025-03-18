@@ -34,6 +34,9 @@ Last updated: 2025-03-18
      - **Region**: Choose the region closest to you or your users.
      - **Runtime stack**: Select the runtime stack (e.g., .NET, Node.js, Python) you want to use.
      - **Version**: Choose the version of the runtime stack.
+     
+         <img width="550" alt="image" src="https://github.com/user-attachments/assets/55c46c0d-cb02-42cc-bb25-62615869c534" />
+
 5. **Configure Storage and Networking**:
    - **Storage Account**: Create a new storage account or use an existing one.
    - **Operating System**: Choose between Windows or Linux.
@@ -43,6 +46,10 @@ Last updated: 2025-03-18
    - Review all the configurations you have made.
    - Click `Create` to deploy your Function App.
   
+
+       https://github.com/user-attachments/assets/a1ab969e-35f0-440d-b977-ce349cb69e99
+
+
   
 ## Create a Function
 
