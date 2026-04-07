@@ -50,6 +50,7 @@ Please follow as described below:
 - [Step 3: Set Up AI Services](./instructions/3_SetupAIServices.md)
 - [Step 4: Create a Log Analytics workspace in Azure](./instructions/4_CreateLogAnalyticsWS.md)
 - [Step 5: Setup the Key Vault and Store secrets/keys](./instructions/5_SetupKeyVault.md)
+- [Step 6: Setup the Function App and and Develop](./instructions/6_SetupFunctionApp.md)
 
 ## Important Considerations for Production Environment
 
