@@ -27,7 +27,7 @@ Last updated: 2025-02-21
 
 ## Overview 
 
-```
+```text
 .
 ├── README.md
 ├── src
@@ -48,20 +48,20 @@ Last updated: 2025-02-21
 
 ## Resources 
 
-| Resource                  | Description                                                                                           |
-|---------------------------|-------------------------------------------------------------------------------------------------------|
-| Azure Resource Group      | A logical container that organizes and manages all the related Azure resources.                       |
-| Azure Blob Storage        | Stores input files (xlsx, csv, docs, pdfs) and output summary files.                                  |
-| Azure Functions           | Executes serverless compute tasks to process the uploaded files and generate summaries.                |
-| Azure AI Services  | Provides text analytics and OCR capabilities to handle text data from docs and pdfs.                  |
-| Azure Storage Account     | Manages Blob Storage and other storage services.                                                      |
-| Azure Key Vault           | Stores and manages sensitive information such as connection strings and API keys.                     |
-| Application Insights      | Monitors the performance and usage of the file processing tool.                                        |
-| Log Analytics Workspace   | Collects and analyzes log data from various sources.                                                  |
+| Resource                | Description                                                                                   |
+| :---------------------- | :-------------------------------------------------------------------------------------------- |
+| Azure Resource Group    | A logical container that organizes and manages all the related Azure resources.               |
+| Azure Blob Storage      | Stores input files (xlsx, csv, docs, pdfs) and output summary files.                          |
+| Azure Functions         | Executes serverless compute tasks to process the uploaded files and generate summaries.       |
+| Azure AI Services       | Provides text analytics and OCR capabilities to handle text data from docs and pdfs.          |
+| Azure Storage Account   | Manages Blob Storage and other storage services.                                               |
+| Azure Key Vault         | Stores and manages sensitive information such as connection strings and API keys.             |
+| Application Insights    | Monitors the performance and usage of the file processing tool.                                |
+| Log Analytics Workspace | Collects and analyzes log data from various sources.                                           |
 
 ## How to execute it 
 
-```mermaid 
+```mermaid
 graph TD;
     A[az login] --> B(terraform init)
     B --> C{Terraform provisioning stage}
@@ -90,7 +90,7 @@ graph TD;
 
 2. **Initialize Terraform**: Initializes the working directory containing the Terraform configuration files. It downloads the necessary provider plugins and sets up the backend for storing the state.
 
-    ``` sh
+    ```sh
     terraform init
     ```
 
