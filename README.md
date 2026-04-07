@@ -3,14 +3,13 @@
 Costa Rica
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
-[brown9804](https://github.com/brown9804)
+[Cloud2BR OSS - Learning Hub](https://github.com/Cloud2BR-MSFTLearningHub)
 
-Last updated: 2025-02-21
+Last updated: 2026-04-07
 
 ----------
 
 > Provides an example of creating an automated file processing and summary generation tool using Microsoft Azure technologies. It demonstrates how to use Azure AI Services, Azure Blob Storage, Azure Functions, and Python to upload files, search for key values, and generate summaries. The tool supports tabular data in xlsx and csv formats, as well as text data from docs and pdf files. Summaries can be generated in few formats, including xlsx, csv, and text files.
-
 > [!IMPORTANT]
 > Disclaimer: Please note, this example of solution `it is not an official solution guide`. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
@@ -67,7 +66,9 @@ Please follow as described below:
 - **Compliance**: Ensure that your deployment complies with relevant regulations and standards. Use Azure Policy to enforce compliance and governance policies across your resources.
 - **Disaster Recovery**: Implement a disaster recovery plan to ensure business continuity in case of failures. Use Azure Site Recovery and backup solutions to protect your data and applications.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-0-limegreen" alt="Total views">
+  <p>Refresh Date: 2026-04-07</p>
 </div>
+<!-- END BADGE -->

@@ -1,0 +1,87 @@
+name: Validate and Fix Notebook
+
+on:
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: pr-branch-maintenance-${{ github.event.pull_request.head.ref || github.ref_name }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  validate-and-fix-notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Jupyter and nbformat
+        run: pip install jupyter nbformat
+
+      - name: Validate and fix notebooks
+        run: |
+          python - <<'PY'
+          import glob
+          import sys
+          import nbformat
+
+          files = glob.glob('**/*.ipynb', recursive=True)
+          if not files:
+              print('No notebooks found.')
+              sys.exit(0)
+
+          for file_path in files:
+              with open(file_path, 'r', encoding='utf-8') as handle:
+                  notebook = nbformat.read(handle, as_version=4)
+              nbformat.validate(notebook)
+
+              widgets = notebook.metadata.setdefault('widgets', {})
+              widget_state = widgets.setdefault(
+                  'application/vnd.jupyter.widget-state+json',
+                  {'version': '1.0', 'state': {}},
+              )
+              widget_state.setdefault('state', {})
+
+              with open(file_path, 'w', encoding='utf-8') as handle:
+                  nbformat.write(notebook, handle)
+          PY
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Commit changes
+        env:
+          PR_BRANCH: ${{ github.event.pull_request.head.ref }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Fix notebook format issues"
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          for attempt in 1 2 3; do
+            git fetch origin "$PR_BRANCH"
+            git rebase "origin/$PR_BRANCH"
+            if git push origin HEAD:"$PR_BRANCH"; then
+              exit 0
+            fi
+          done
+          echo "Failed to push branch updates after 3 attempts."
+          exit 1
