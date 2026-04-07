@@ -66,7 +66,7 @@ Within the Storage Account, create a Blob Container to store your PDFs.
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-0-limegreen" alt="Total views">
+     <img src="https://img.shields.io/badge/Total%20views-1282-limegreen" alt="Total views">
   <p>Refresh Date: 2026-04-07</p>
 </div>
 <!-- END BADGE -->
